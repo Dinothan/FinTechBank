@@ -10,6 +10,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-native-community/netinfo": "^6.0.2",
     "@react-native-firebase/app": "^12.8.0",
     "@react-native-firebase/auth": "^12.8.0",
     "@react-native-picker/picker": "^2.1.0",
@@ -21,8 +22,11 @@
     "react-native-camera": "git+https://git@github.com/react-native-community/react-native-camera.git",
     "react-native-chart-kit": "^6.11.0",
     "react-native-keychain": "^8.0.0",
+    "react-native-offline": "^6.0.0",
+    "react-native-pager-view": "^5.4.6",
     "react-native-paper": "^4.9.2",
     "react-native-paper-dropdown": "^1.0.7",
+    "react-native-paper-tabs": "^0.4.2",
     "react-native-payment-card": "^1.0.61",
     "react-native-progress": "^5.0.0",
     "react-native-qrcode-scanner": "^1.5.4",

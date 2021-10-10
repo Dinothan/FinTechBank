@@ -1,11 +1,21 @@
 import React from 'react';
 import {StyleSheet, Text, View, ScrollView} from 'react-native';
+import {black} from 'react-native-paper/lib/typescript/styles/colors';
 import * as Progress from 'react-native-progress';
 import Budget from './budget';
 
 const Home = () => (
   <ScrollView>
     <View style={styles.container}>
+      <View
+        style={{
+          backgroundColor: 'red',
+          color: 'white',
+          paddingLeft: 160,
+          paddingRight: 160,
+        }}>
+        <Text style={{color: 'white'}}>No Internet</Text>
+      </View>
       <View
         style={{
           backgroundColor: 'white',
@@ -104,6 +114,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#E9E9E9',
     alignItems: 'center',
     paddingTop: 12,
+    color: 'black',
   },
   header: {
     fontSize: 20,

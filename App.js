@@ -10,18 +10,24 @@ import React from 'react';
 import {Provider} from 'react-redux';
 import Router from './src/navigation/routes';
 import {NativeRouter} from 'react-router-native';
-import configureStore from './src/store/store';
+import {configureStore, persistor} from './src/store/store';
 import {Provider as PaperProvider} from 'react-native-paper';
+import {PersistGate} from 'redux-persist/integration/react';
+import {NetworkProvider} from 'react-native-offline';
 
 const store = configureStore();
 const App = () => {
   return (
     <Provider store={store}>
-      <NativeRouter>
-        <PaperProvider>
-          <Router />
-        </PaperProvider>
-      </NativeRouter>
+      <PersistGate loading={null} persistor={persistor}>
+        <NativeRouter>
+          <PaperProvider>
+            <NetworkProvider shouldPing={true} pingInterval={100}>
+              <Router />
+            </NetworkProvider>
+          </PaperProvider>
+        </NativeRouter>
+      </PersistGate>
     </Provider>
   );
 };
