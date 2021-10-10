@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "122294361132",
+    "project_id": "fintechbank",
+    "storage_bucket": "fintechbank.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:122294361132:android:dd3044fa3a62ba57804589",
+        "android_client_info": {
+          "package_name": "com.fintechbank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "122294361132-mss71n0v0f5rlj50v19ogt7udsv2vmfp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJVIQ_hUaEp9tu39LECbuzH4g5Roj3tmc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "122294361132-mss71n0v0f5rlj50v19ogt7udsv2vmfp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "122294361132-3b09n1jcl5afhq316p2d1bt8j7huts47.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.fintech.fintechbank"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
